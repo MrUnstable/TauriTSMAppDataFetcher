@@ -199,7 +199,7 @@ namespace TauriTSMAppDataFetcher
                 return;
 
 
-            string folderPath = Path.Combine(Settings.Default.WoWLocation, "Interface", "AddOns", "TradeSkillMaster_AppHelper")
+            string folderPath = Path.Combine(Settings.Default.WoWLocation, "Interface", "AddOns", "TradeSkillMaster_AppHelper");
             try
             {
                 if (!Directory.Exists(folderPath))
