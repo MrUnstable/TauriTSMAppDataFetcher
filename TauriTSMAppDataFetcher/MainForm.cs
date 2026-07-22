@@ -199,7 +199,7 @@ namespace TauriTSMAppDataFetcher
                 return;
 
 
-            string folderPath = Path.Combine(Settings.Default.WoWLocation, "Interface", "AddOns", "TradeSkillMaster_AuctionDB");
+            string folderPath = Path.Combine(Settings.Default.WoWLocation, "Interface", "AddOns", "TradeSkillMaster_AppHelper")
             try
             {
                 if (!Directory.Exists(folderPath))
@@ -244,7 +244,7 @@ namespace TauriTSMAppDataFetcher
 
                 using (var wc = new WebClient())
                 {
-                    wc.DownloadFile(builder.Uri, Path.Combine(Settings.Default.WoWLocation, "Interface", "AddOns", "TradeSkillMaster_AuctionDB", "AppData.lua"));
+                    wc.DownloadFile(builder.Uri, Path.Combine(Settings.Default.WoWLocation, "Interface", "AddOns", "TradeSkillMaster_AppHelper", "AppData.lua"));
                 }
             }
             catch (Exception ex)
